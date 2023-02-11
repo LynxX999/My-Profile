@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css"><!--this code links css with html-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--This link activates the font awesome icons , by creating a connection with the font awesome website-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <center>
+    <ul class="menu">
+      <li class="links"><a href="#welcome">Home</a> </li>
+      <li class="links"><a href="#video">Video</a> </li>
+      <li class="links"><a href="#games">Games</a> </li>
+      <li class="links"><a href="#insp">inspiration</a> </li>
+      <li class="links"><a href="#contacts">Contacts</a> </li>
+    </ul>
+  </center>
+  <section id="welcome">
+    <img class="profile" src="data:image/png;base64,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">
+<h1>I am </h1><br>
+<h2 id="name">Aarush Kohli</h2>
+<h2>My favourite hobby is Tennis</h2>
+
+  </section> 
+  <section id="bio">
+    <div class="parallax">
+<h1>
+  Hi!
+</h1>
+<div class="line"></div>
+<p>Aarush Kohli is a former tennis player. He enjoys reading, gaming and also studies the guitar. As of January 1 2023 Aarush was ranked 73 in the country on the LTA website(lawn tennis association).<br><br></p>
+    </div>
+  </section>
+  <section id="video">
+    <h1>Video</h1>
+    <div class="line"></div>
+    <iframe width="1280" height="720" height="720" src="https://www.youtube.com/embed/qBqcTl_CqkY" 
+    title="Novak Djokovic vs Alexander Zverev  | 2022 World Tennis League" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+  </section>
+</div> 
+  <section id="games">
+    <h1>Games</h1>
+    <div class="line"></div>
+    <h2>Games created by me in applab</h2>
+    <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/dSX9ajtS9LKNFUv9wo1HNFfSDN4a1YWb6IYwj91PSnA/embed"></iframe>
+    <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/dSX9ajtS9LKNFUv9wo1HNEf1cTqreaihQooJX2C8Wuc/embed"></iframe>
+    <!--Iframe tag: embedds the data in a website-->
+    
+      <div  class="carousel slide"id="mycarousel">
+        <h2>Click on the games to explore</h2>
+        <h5>These games are built on game lab. Click on the game to play</h5>
+        <div class="carousel-inner">
+          <div class="item active">
+            <center>
+           <a href="https://studio.code.org/projects/spritelab/y2EZfD3hSMhnYFbadZ2jePJhQeqVOwTHXPTPUbm-OeM" target="_blank" >
+            <img src="https://studio.code.org/v3/files/y2EZfD3hSMhnYFbadZ2jePJhQeqVOwTHXPTPUbm-OeM/.metadata/thumbnail.png" class="img-responsive">
+           </a>
+           <div class="carousel-content">
+            <h4>Winnie the pooh</h4>
+           </div>
+            </center>
+          </div>
+          <div class="item">
+            <center>
+           <a href="https://studio.code.org/projects/gamelab/2QDBaqG2jfy3frpMBSeAAQLzMPbMqk3h1CXMTRqnnGM/edit" target="_blank" >
+            <img src="https://studio.code.org/v3/files/2QDBaqG2jfy3frpMBSeAAQLzMPbMqk3h1CXMTRqnnGM/.metadata/thumbnail.png" class="img-responsive">
+           </a>
+           <div class="carousel-content">
+            <h4>Among Us</h4>
+           </div>
+            </center>
+          </div>
+          <div class="item">
+            <center>
+           <a href="https://studio.code.org/projects/gamelab/O1T_BpzgPEYMx-QZvbRv7ZrCDcZvIDnD40MTLQha9Kk/edit" target="_blank" >
+            <img src="https://studio.code.org/v3/files/O1T_BpzgPEYMx-QZvbRv7ZrCDcZvIDnD40MTLQha9Kk/.metadata/thumbnail.png" class="img-responsive">
+           </a>
+           <div class="carousel-content">
+            <h4>Asphalt 10-Gods of the street</h4>
+           </div>
+            </center>
+          </div>
+          <div class="item">
+            <center>
+           <a href="https://studio.code.org/projects/applab/12WG-tHQ5ftdoMKbWq-G_6QGVYNtgCoUAKYunRtosK0/edit" target="_blank" >
+            <img src="https://studio.code.org/v3/files/zAKYNAuLeyoIELmQbnbrxriIca9hNTkix9F2pRegUL0/.metadata/thumbnail.png" class="img-responsive">
+           </a>
+           <div class="carousel-content">
+            <h4>Pokémon Battle</h4>
+           </div>
+            </center>
+          </div>
+          <div class="item">
+            <center>
+           <a href="https://studio.code.org/projects/gamelab/gWj39l3_0I66aVEX-HGVUEKM-eJ_w7OUlw1YPofMmFo/edit" target="_blank" >
+            <img src="https://studio.code.org/v3/files/iICJkQcjohLF4_JnoMgWr3zPBcIrcKfrtWQEY5vAxUw/.metadata/thumbnail.png" class="img-responsive">
+           </a>
+           <div class="carousel-content">
+            <h4>Pac-Man</h4>
+           </div>
+            </center>
+          </div>
+        </div> 
+        <a href="#mycarousel" class="left carousel-control" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>  
+        <a href="#mycarousel" class="right carousel-control" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>  
+      </div>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+  </section>
+<section id="insp">
+  <h1>inspiration</h1>
+<div class="line"></div>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Tennis" class="article"><img src="https://c.files.bbci.co.uk/84A5/production/_124975933_nad.gettyimages-1400029258.jpg" id="im"></a>
+<a target="_blank" href="https://direct.playstation.com/en-gb/hardware/ps5" class="article"><img src="https://i.ytimg.com/vi/9v7Gd4hablQ/maxresdefault.jpg" id="im"></a>
+
+</section>
+<section id="contacts">
+<h1>Contacts</h1>
+<div class="line"></div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4995.942856393868!2d-0.7786803694605844!3d51.238021085553186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48742ceaeca2e405%3A0x9fe547f806b8d2dd!2sWeybourne%2C%20Farnham%20GU9%209EQ!5e0!3m2!1sen!2suk!4v1668338215309!5m2!1sen!2suk" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe
+    allow="microphone;"
+    width="350"
+    height="430"
+    src="">
+    <!--put dialogflow link above-->
+</iframe>
+<br>
+<br>
+<div class="contact1">
+ <a href="mailto:arushcoding@gmail.com?subject=how may I help you"> 
+    <i class="fa fa-envelope"></i>&nbsp;&nbsp;
+    <!--nbsp stands for no breaking space - i t creates space between two elements without breaking to the next line-->
+    <!--fa fa is the class for font awesome icon,i stands for inline tag that puts two elements beside each other, this works with the style display:inline-->
+    <h5>arushcoding@gmail.com</h5>
+  </a>
+  <br><br>
+  <a href="https://www.instagram.com/"> 
+    <i class="fa fa-instagram"></i>&nbsp;&nbsp;
+    <h5>@</h5>
+    <!--put real instagram account above-->
+  </a>
+</div>
+</section>
+</body>
+</html>

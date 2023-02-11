@@ -1,0 +1,143 @@
+body{
+    text-align: center;
+    margin: 0;
+}
+#welcome{
+   /* height:100%;*/
+   top:0;
+
+    width: 100%;
+    background: linear-gradient(#0095ff 0%, #27ae60 100%);
+    height:800px;
+    display: table;
+    opacity: 0.8;
+    color:white;
+    position: absolute;
+}
+h1{
+    font-size: 50px; 
+    line-height: 1.2; 
+    font-family:  sans-serif;
+     font-weight: bold;
+padding-top: 100px;
+}
+#name{
+    font-size: 30px; 
+    line-height: 1.2; 
+    font-family: "Cinzel Decorative", cursive;   
+}
+h2{
+    font-size: 30px; 
+    line-height: 1.2; 
+    font-family: monospace;
+     font-weight: 300;
+
+}
+.profile{
+    width: 175px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    border-radius: 40%;
+}
+#bio{
+    text-align: center;
+    color:rgb(140, 244, 135);
+    margin-top:800px;
+    font-weight: bold;
+
+
+}
+p{
+    max-width: 100%;
+    padding-left:100px;
+    padding-right: 100px;
+    padding-top: 200px;
+    margin: 100px auto;
+    font-size: 35px;
+    line-height: 1.3;
+}
+.line{
+    height: 6px;
+    width: 100px;
+    background-color: black;
+    margin: 8px auto;
+}
+.menu{
+    list-style: none;
+    position: fixed;
+    background: black;
+    z-index: 1;
+    width: 100%;
+    top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.links{
+    display: inline;
+    color: whitesmoke;
+    font-size: 35px;
+    font-family: fantasy;
+   
+    padding-right:20px ;
+    padding-left: 20px;
+    
+}
+.links:hover{
+    font-size: 40px;
+    background-color: aqua;
+
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+}
+#writings a{
+    color: blue;
+}
+#contacts{
+    background: firebrick;
+}
+.contact1 h5{
+display:inline;
+}
+.contact1 a{
+    color: aliceblue;
+    text-shadow: none;
+}
+.parallax {
+    position: absolute;
+    background-image: url("https://64.media.tumblr.com/bb87e9a9154aef9c5d9724e8fa74e8df/633ce666c99d2343-14/s500x750/356dfac6e830ad781d69c746b73955b3e260501f.gif");
+    min-height: 1000px;
+    opacity:0.65 ;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#im{
+    width: 500px;
+}
+#mycarousel{
+    background-color: #50c7c7; 
+}
+#mycarousel img{
+    height: 500px; width: 500px;
+}
+#games{
+    font-family: 'Rubik Bubbles', cursive;
+}
+.carousel-inner h4{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 30px;
+}
+.article:hover{
+    transform: scale(0.5);
+}
+.article img{
+    transition: transform 0.2s;
+}
